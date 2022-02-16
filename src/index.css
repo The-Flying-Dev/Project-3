@@ -1,5 +1,9 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    color: red;
-  }
+    background: black;  color: white;
+}
+  
+* { 
+    box-sizing: border-box;
+}

@@ -1,4 +1,5 @@
 .tweet {
+    display: flex;
     padding: 10px;
   }
   
@@ -21,6 +22,6 @@
   }
   
   .tweet-content {
-    padding-left: 16px;
+    padding-left: 3px;
     padding-bottom: 20px;
   }

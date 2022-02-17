@@ -1,19 +1,20 @@
 import React from 'react';
-import Tweet from './Tweet';
+import CharacterForm from './CharacterForm'
+import Timeline from './Timeline'
+import { FaTwitter } from 'react-icons/fa'
+import './App.css'
 import tweets from '../tweets.json';
 
 
 function App() {
     return (
-        <div className="timeline">
-        {/* map over each object in array */}
-            {tweets.map(({ id, user, created_on, content }) => (
-                <Tweet key={id} user={user} createdOn={created_on}>
-                    {content}
-                </Tweet>
-            ))}
-        </div>
-    );
-};
+      <div className="app">
+        <FaTwitter className="app-logo" size="2em" />
+        <CharacterForm />
+        <div className="separator"></div>
+        <Timeline tweets={tweets} />
+      </div>
+    )
+  }
 
 export default App;
